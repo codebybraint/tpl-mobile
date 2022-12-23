@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_left_main_menu">40dp</dimen>
+    <dimen name="pading_main_menu">20dp</dimen>
+    <dimen name="icon_main_menu">80dp</dimen>
+    <dimen name="image_main_menu">96dp</dimen>
+    <dimen name="height_image_main_menu">150dp</dimen>
+    <dimen name="width_image_main_menu">195dp</dimen>
+    <dimen name="linear_top_main_menu">245dp</dimen>
+    <dimen name="image_top_main_menu">150dp</dimen>
+    <dimen name="vertical_image_slider">345dp</dimen>
+</resources>

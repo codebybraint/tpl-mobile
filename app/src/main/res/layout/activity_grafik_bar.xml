@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.baktiar.myapplication.Control.GrafikBarActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <TextView
+        android:id="@+id/txtShowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/checkBoxStyle"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:text="" />
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_below="@+id/txtShowText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bargraph"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+    </com.github.mikephil.charting.charts.BarChart>
+
+</RelativeLayout>

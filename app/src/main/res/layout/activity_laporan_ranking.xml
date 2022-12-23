@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:paddingBottom="16dp"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="16dp"
+tools:context="com.example.baktiar.myapplication.Control.LaporanRankingActivity">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/txtLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berdasarkan : "
+        android:textColor="@color/black"
+        android:theme="@style/checkBoxStyle" />
+    <Spinner
+        android:id="@+id/spinnerRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+</TableRow>
+
+
+<RadioGroup
+    android:id="@+id/radioGroupOutput2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tableRow1"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+
+    <RadioButton
+        android:id="@+id/RBTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tahunan"
+        android:textColorHint="@color/black" />
+
+    <RadioButton
+        android:id="@+id/RBBulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Bulanan"
+        android:textColorHint="@color/black" />
+
+    <RadioButton
+        android:id="@+id/RBTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Range Tanggal"
+        android:textColorHint="@color/black" />
+</RadioGroup>
+
+<View
+    android:id="@+id/line1"
+
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:layout_below="@id/radioGroupOutput2"
+    android:background="#D3D3D3" />
+
+<TableRow
+    android:id="@+id/tableRow2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line1"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <EditText
+        android:id="@+id/tglAwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="mm/dd/yyyy"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" s/d  "
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/tglAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="mm/dd/yyyy"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+</TableRow>
+
+<TableRow
+    android:id="@+id/tableRow3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line1"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/txtBulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bulan:"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinnerBulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:id="@+id/txtTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahun:"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinnerBulanTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+</TableRow>
+
+<TableRow
+    android:id="@+id/tableRow4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line1"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/txtTahun1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahun:"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinnerTahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+</TableRow>
+
+<View
+    android:id="@+id/line2"
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:layout_below="@id/tableRow2"
+    android:background="#D3D3D3" />
+
+<RadioGroup
+    android:id="@+id/radioGroupOutput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/line2"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <RadioButton
+            android:id="@+id/RBSatuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Satuan"
+            android:textColorHint="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinnerSatuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <RadioButton
+            android:id="@+id/RBRupiah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rupiah"
+            android:textColorHint="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinnerRupiah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+</RadioGroup>
+
+
+<Button
+    android:id="@+id/buttonShow"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_below="@+id/radioGroupOutput"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="12dp"
+    android:adjustViewBounds="true"
+    android:background="@color/grey_primary"
+    android:hint="Show Graph"
+    android:scaleType="fitCenter"
+    android:textColorHint="@color/white" />
+</RelativeLayout>

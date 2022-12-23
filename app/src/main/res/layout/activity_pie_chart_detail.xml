@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.baktiar.myapplication.Control.PieChartDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/txtLaporan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laporan berdasarkan : "
+            android:textColor="@color/black"
+            android:theme="@style/checkBoxStyle" />
+    </TableRow>
+
+    <RadioGroup
+        android:id="@+id/radioGroupOutput4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow6"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/RBTonase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tonase"
+            android:textColorHint="@color/black" />
+
+        <RadioButton
+            android:id="@+id/RBLembar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Lembar"
+            android:textColorHint="@color/black" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/CBGP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow6"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:text="GP"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtShowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupOutput4"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:theme="@style/checkBoxStyle" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtShowText"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"></com.github.mikephil.charting.charts.PieChart>
+
+</RelativeLayout>

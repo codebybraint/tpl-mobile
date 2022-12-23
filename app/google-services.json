@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "591066454614",
+    "firebase_url": "https://tripilar-dbdab.firebaseio.com",
+    "project_id": "tripilar-dbdab",
+    "storage_bucket": "tripilar-dbdab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591066454614:android:5bb2d4ddc152b2b6",
+        "android_client_info": {
+          "package_name": "com.example.baktiar.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591066454614-ijk5gouu4dv3if6lit3fdmrglfpnrfh2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.baktiar.myapplication",
+            "certificate_hash": "7b7514c46424de08ab7ecc478a813a1e5fb738c6"
+          }
+        },
+        {
+          "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmavH9f7yM9Yret5sv-F8ILaZu7AcJ6O4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591066454614:android:f37ee7cc531a1927",
+        "android_client_info": {
+          "package_name": "com.example.baktiar.myapplication.register"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591066454614-92c3jksb54f2pjijrevm12odcdg2851h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.baktiar.myapplication.register",
+            "certificate_hash": "661d3d88cd9bf19eb02875adec3e1722fc40ca64"
+          }
+        },
+        {
+          "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmavH9f7yM9Yret5sv-F8ILaZu7AcJ6O4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591066454614:android:19a8b4981f05dc6d",
+        "android_client_info": {
+          "package_name": "com.example.baktiar.myapplication.triarta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591066454614-o6g31tijinu0qnoa1ibkulap0t9uc1up.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.baktiar.myapplication.triarta",
+            "certificate_hash": "661d3d88cd9bf19eb02875adec3e1722fc40ca64"
+          }
+        },
+        {
+          "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmavH9f7yM9Yret5sv-F8ILaZu7AcJ6O4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591066454614:android:70b35679387126a4",
+        "android_client_info": {
+          "package_name": "com.example.baktiar.myapplication.tripilar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591066454614-ac7o0dgfnv1i7f33ed7aioc870tq860r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.baktiar.myapplication.tripilar",
+            "certificate_hash": "661d3d88cd9bf19eb02875adec3e1722fc40ca64"
+          }
+        },
+        {
+          "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmavH9f7yM9Yret5sv-F8ILaZu7AcJ6O4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591066454614-7ud5s1333g46j2fli18c0v8q9j8uu2g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

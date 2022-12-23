@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingBottom="16dp"
+android:paddingTop="16dp"
+android:background="@color/white"
+tools:context="com.example.baktiar.myapplication.Control.ProduksiActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/checkBoxStyle"
+        android:textColor="@color/black"
+        android:text="Laporan produksi bulanan : "
+        android:id="@+id/txtJenisLaporan"
+        android:onClick="Select" />
+
+
+
+</TableRow>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:layout_below="@id/tableRow1"
+        android:id="@+id/radioGroupOutput2">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tahunan"
+            android:textColorHint="@color/black"
+            android:id="@+id/RBTahun"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Range Bulan"
+            android:textColorHint="@color/black"
+            android:id="@+id/RBBulan"/>
+
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/checkBoxStyle"
+        android:textColor="@color/black"
+        android:layout_below="@id/tableRow1"
+        android:paddingRight="41dp"
+        android:layout_alignParentRight="true"
+        android:text="Departemen"
+        android:id="@+id/CBDepartemen"
+        android:onClick="Select"/>
+
+<View
+    android:id="@+id/line1"
+    android:layout_below="@id/radioGroupOutput2"
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="#D3D3D3"
+    />
+<TableRow
+    android:id="@+id/tableRow2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line1"
+    android:paddingTop="20dp"
+    android:paddingBottom="2dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bulan:"
+        android:textColor="@color/black"
+        android:id="@+id/txtBulan"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blnAwal"
+        android:backgroundTint="@color/grey_primary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="s/d"
+        android:textColor="@color/black"
+        android:id="@+id/sd"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blnAKhir"/>
+
+
+</TableRow>
+
+<TableRow
+    android:id="@+id/tableRow4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line1"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahun: "
+        android:textColor="@color/black"
+        android:id="@+id/txtTahun1"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTahun"></Spinner>
+</TableRow>
+<TableRow
+    android:id="@+id/belowTableRow2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tableRow2"
+    android:paddingBottom="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahun :  "
+        android:textColor="@color/black"
+        android:id="@+id/txtTahun"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thnRangetgl"/>
+</TableRow>
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/belowTableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#D3D3D3"
+        />
+
+    <LinearLayout
+        android:id="@+id/mesin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line2"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <CheckBox
+            android:id="@+id/CBMesin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Select"
+            android:text="Mesin : "
+            android:textColor="@color/black"
+            android:theme="@style/checkBoxStyle" />
+
+        <Spinner
+            android:id="@+id/spinnerMesin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/mesin"
+        android:id="@+id/radioGroupOutput">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Lembar"
+            android:textColorHint="@color/black"
+            android:id="@+id/RBLembar"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tonase"
+            android:textColorHint="@color/black"
+            android:id="@+id/RBTonase"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/radioGroupOutput"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey_primary"
+        android:hint="Show Graph"
+        android:textColorHint="@color/white" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Company" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

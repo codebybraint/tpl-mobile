@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/white"
+    tools:context="com.example.baktiar.myapplication.Control.PerbandinganHarianActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/txtLaporan"
+            android:text="Perbandingan Berdasarkan (DO Date) : " />
+
+
+
+
+    </TableRow>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:layout_below="@id/tableRow1"
+        android:id="@+id/radioGroupOutput2">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="6 hari terakhir"
+            android:textColorHint="@color/black"
+            android:id="@+id/RBMingguan"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Month to date"
+            android:textColorHint="@color/black"
+            android:id="@+id/RBMTD"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Year to date"
+            android:textColorHint="@color/black"
+            android:id="@+id/RBYTD"/>
+    </RadioGroup>
+    <View
+        android:id="@+id/line1"
+
+        android:layout_below="@id/radioGroupOutput2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#D3D3D3"
+        />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bulan:"
+            android:textColor="@color/black"
+            android:id="@+id/txtBulan"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerBulan"></Spinner>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tahun:"
+            android:textColor="@color/black"
+            android:id="@+id/txtTahun"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerTahun"></Spinner>
+    </TableRow>
+
+
+
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/tableRow4"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey_primary"
+        android:hint="Show Graph"
+        android:textColorHint="@color/white" />
+</RelativeLayout>

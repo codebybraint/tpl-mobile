@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/white"
+    tools:context="com.example.baktiar.myapplication.Control.LaporanHarianActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/txtLaporan"
+            android:text="Release harian : " />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow12"
+      android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <CheckBox
+            android:id="@+id/CBPenjualanTBM"
+            android:textColor="@color/black"
+            android:text="Penjualan TBM"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow1"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/JumlahNota"
+            android:text="Jumlah Nota: " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/JumlahNotaData"
+            android:text="" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/buttonNota"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tableRow4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:background="@color/grey_primary"
+            android:hint="Perbandingan Nota"
+            android:scaleType="fitCenter"
+            android:textColorHint="@color/white" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow22"
+        android:paddingTop="5dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/JumlahLembar"
+            android:text="Jumlah Produk: " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/JumlahLembarData"
+            android:text="" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow3"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/buttonLembar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tableRow4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:background="@color/grey_primary"
+            android:hint="Perbandingan Lembar"
+            android:scaleType="fitCenter"
+            android:textColorHint="@color/white" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow33"
+        android:paddingTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/JumlahGross"
+            android:text="Omzet Gross: " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/JumlahOmzetData"
+            android:text="" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow4"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/buttonGross"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tableRow4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:background="@color/grey_primary"
+            android:hint="Perbandingan Gross"
+            android:scaleType="fitCenter"
+            android:textColorHint="@color/white" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow44"
+        android:paddingTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+
+            android:text="Tonase : " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/black"
+            android:id="@+id/JumlahTonaseData"
+            android:text="" />
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow5"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/buttonTonase"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tableRow5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:background="@color/grey_primary"
+            android:hint="Perbandingan Tonase"
+            android:scaleType="fitCenter"
+            android:textColorHint="@color/white" />
+    </TableRow>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Company" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

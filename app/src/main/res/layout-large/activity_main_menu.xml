@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    tools:context="com.example.baktiar.myapplication.Control.MainMenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+android:background="@color/white"
+
+        >
+
+        <LinearLayout
+
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vertical_image_slider"
+                android:paddingTop="20dp" />
+
+            <LinearLayout
+
+                android:id="@+id/SliderDots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPager"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="100dp">
+
+                <LinearLayout
+                    android:id="@+id/id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_1_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Penjualan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_2_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Penjualan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="per distributor"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_3_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Penjualan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="per produk"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/id7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/icon_7_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Laporan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Hari ini"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/pading_main_menu">
+
+                <LinearLayout
+                    android:id="@+id/id5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_5_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Produksi"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_6_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Perbandingan "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="produksi per mesin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/id4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_4_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Retur"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/id11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu"
+                   >
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/icon_8_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Laporan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Pemakaian Bahan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/pading_main_menu"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_7_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Laporan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Hari ini"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickHandler"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_left_main_menu"
+
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_main_menu"
+                        android:layout_height="@dimen/icon_main_menu"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/icon_8_main_menu"
+                        android:padding="@dimen/pading_main_menu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/pading_main_menu"
+                        android:gravity="center"
+                        android:text="Laporan"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Barang Reject"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickHandler"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left_main_menu"
+                android:paddingTop="@dimen/pading_main_menu"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_main_menu"
+                    android:layout_height="@dimen/icon_main_menu"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/icon_9_main_menu"
+                    android:padding="@dimen/pading_main_menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pading_main_menu"
+                    android:gravity="center"
+                    android:text="File"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Barang Reject"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <io.ghyeok.stickyswitch.widget.StickySwitch
+                android:id="@+id/stick_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:visibility="gone"
+                app:leftText="TBM"
+                app:rightText="TAA"
+                app:sliderBackgroundColor="@color/green_tosca"
+                app:switchColor="#C0D890"
+                app:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickHandler"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left_main_menu"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_main_menu"
+                    android:layout_height="@dimen/icon_main_menu"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/icon_7_main_menu"
+                    android:padding="@dimen/pading_main_menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pading_main_menu"
+                    android:gravity="center"
+                    android:text="Laporan"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Hari ini"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickHandler"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left_main_menu"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_main_menu"
+                    android:layout_height="@dimen/icon_main_menu"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/icon_7_main_menu"
+                    android:padding="@dimen/pading_main_menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pading_main_menu"
+                    android:gravity="center"
+                    android:text="Laporan"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Hari ini"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

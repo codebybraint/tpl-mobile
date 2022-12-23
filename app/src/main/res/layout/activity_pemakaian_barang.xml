@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingBottom="16dp"
+android:paddingTop="16dp"
+android:background="@color/white"
+tools:context="com.example.baktiar.myapplication.Control.PemakaianBarangActivity">
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/checkBoxStyle"
+        android:textColor="@color/black"
+        android:id="@+id/txtLaporan"
+        android:text="Laporan Pemakaian Bahan : " />
+
+
+
+
+</TableRow>
+
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:layout_below="@id/tableRow1"
+    android:id="@+id/radioGroupOutput2">
+
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Range Bulan"
+        android:textColorHint="@color/black"
+        android:id="@+id/RBBulan"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Range Tanggal"
+        android:textColorHint="@color/black"
+        android:id="@+id/RBTanggal"/>
+</RadioGroup>
+<View
+    android:id="@+id/line1"
+
+    android:layout_below="@id/radioGroupOutput2"
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="#D3D3D3"
+    />
+<TableRow
+    android:id="@+id/tableRow2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line1"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tglAwal"
+        android:hint="mm/dd/yyyy"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" s/d  "
+        android:textColor="@color/black"
+        android:id="@+id/sd"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tglAkhir"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="mm/dd/yyyy"/>
+</TableRow>
+<TableRow
+    android:id="@+id/tableRow3"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/line1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awal:"
+        android:textColor="@color/black"
+        android:id="@+id/txtBulanAwal"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerBulanAwal"></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:id="@+id/txtTahunAwal"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTahunAwal">
+    </Spinner>
+
+</TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akhir:"
+            android:textColor="@color/black"
+            android:id="@+id/txtBulanAkhir"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerBulanAkhir"></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:id="@+id/txtTahunAkhir"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerTahunAkhir">
+        </Spinner>
+
+    </TableRow>
+
+
+<View
+    android:id="@+id/line2"
+    android:layout_below="@id/tableRow2"
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="#D3D3D3"
+    />
+
+
+    <!--<RadioGroup-->
+        <!--android:id="@+id/radioGroupOutput"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/line2"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingBottom="20dp"-->
+        <!--android:paddingTop="20dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/CBShift"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:onClick="Select"-->
+                <!--android:text="Shift"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:paddingRight="75dp"-->
+                <!--android:theme="@style/checkBoxStyle" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+    <!--</RadioGroup>-->
+
+<Button
+    android:id="@+id/buttonShow"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_centerHorizontal="true"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+    android:layout_below="@+id/line2"
+    android:layout_marginTop="12dp"
+    android:background="@color/grey_primary"
+    android:hint="Show Graph"
+    android:textColorHint="@color/white" />
+
+
+
+</RelativeLayout>

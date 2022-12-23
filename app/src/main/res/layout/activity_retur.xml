@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.baktiar.myapplication.Control.ReturActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/txtJenisLaporan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan barang reject : "
+                        android:textColor="@color/black"
+                        android:theme="@style/checkBoxStyle" />
+
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupOutput2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tableRow1"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+
+                        <RadioButton
+                            android:id="@+id/RBBulan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Bulanan"
+                            android:paddingRight="120dp"
+                            android:textColorHint="@color/black" />
+
+
+                        <RadioButton
+                            android:id="@+id/RBTahun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Tahunan"
+                            android:textColorHint="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/RBBulanRange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Range Bulan"
+                            android:textColorHint="@color/black" />
+
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:id="@+id/CBDepartemen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="Select"
+                        android:text="Departemen"
+                        android:textColor="@color/black"
+                        android:theme="@style/checkBoxStyle" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/radioGroupOutput2"
+                    android:background="#D3D3D3" />
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/txtBulan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bulan:"
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:id="@+id/blnAwal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey_primary" />
+
+                    <TextView
+                        android:id="@+id/sd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s/d"
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:id="@+id/blnAKhir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/belowTableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tableRow2"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/txtTahun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tahun :  "
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:id="@+id/thnRangetgl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/belowTableRow2"
+                    android:background="#D3D3D3" />
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/txtJenisBarangReject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan berdasarkan kelompok: "
+                        android:textColor="@color/black"
+                        android:theme="@style/checkBoxStyle" />
+                </TableRow>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupOutput3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tableRow5"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <RadioButton
+                        android:id="@+id/RBProduksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Produksi"
+                        android:textColorHint="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/RBPenjualan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Penjualan"
+                        android:textColorHint="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/RBHandling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Handling"
+                        android:textColorHint="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/RBSemua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Semua"
+                        android:textColorHint="@color/black"
+                        android:visibility="gone" />
+
+                </RadioGroup>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/radioGroupOutput3"
+                    android:background="#D3D3D3" />
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/txtLaporan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan berdasarkan : "
+                        android:textColor="@color/black"
+                        android:theme="@style/checkBoxStyle" />
+                </TableRow>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupOutput4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tableRow6"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/RBPresentase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Presentase Keseluruhan"
+                        android:textColorHint="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/RBLembar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Berdasarkan Lembar"
+                        android:textColorHint="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/RBTonase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Berdasarkan Tonase"
+                        android:textColorHint="@color/black" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/buttonShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/radioGroupOutput4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/grey_primary"
+                    android:hint="Show Graph"
+                    android:scaleType="fitCenter"
+                    android:textColorHint="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Company" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
